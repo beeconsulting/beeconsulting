@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">LEED</a>
+  <a href="#">BuiltGreen</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+<div id="sheets">
+    <table class="table table-bordered">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th><span class="add-row glyphicon glyphicon-plus"></span></th>
+        </tr>
+        <tr>
+            <td contenteditable="true">Kim</td>
+            <td contenteditable="true">Bell</td>
+            <td contenteditable="true">Senior Analyst</td>
+            <td><span class="delete-row glyphicon glyphicon-remove"></span></td>
+        </tr>
+        <tr>
+            <td contenteditable="true">Laurence</td>
+            <td contenteditable="true">Peter</td>
+            <td contenteditable="true">Technical Assistant</td>
+            <td><span class="delete-row glyphicon glyphicon-remove"></span></td>
+        </tr>
+        <tr>
+            <td contenteditable="true">Joe</td>
+            <td contenteditable="true">Franklin</td>
+            <td contenteditable="true">Accountant</td>
+            <td><span class="delete-row glyphicon glyphicon-remove"></span></td>
+        </tr>
+        <!-- hidden row -->
+        <tr class="hidden">
+            <td contenteditable="true">NIL</td>
+            <td contenteditable="true">NIL</td>
+            <td contenteditable="true">NIL</td>
+            <td><span class="delete-row glyphicon glyphicon-remove"></span></td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+
+$(document).ready(function() {
+    // function to add row
+    $('.add-row').click(function () {
+        var $row = $('#mytable').find('tr.hidden').clone(true).removeClass('hidden');
+        $('#mytable').find('table').append($row);
+    });
+
+    // function to remove row
+    $('.delete-row').click(function () {
+        $(this).parents('tr').detach();
+    });
+});
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "350px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+var sidebar = document.getElementById("mySidenav")
+
+</script>
+   
+</body>
+</html> 
