@@ -7,7 +7,7 @@ body {
 }
 
 .theme-light {
-   --color-primary: white;
+   --color-primary: #fcf3f1;
    --color-secondary: #fbfbfe;
    --color-accent: #a5cc9b;
    --font-color: #403e3e;
@@ -15,7 +15,7 @@ body {
 }
 
 .theme-dark {
-   --color-primary: #0e0e0e;
+   --color-primary: #1f1f1f;
    --color-secondary: #2f2b24;
    --color-accent: #44633d;
    --font-color: #ddd;
@@ -76,9 +76,8 @@ nav .animation {
 }
 
 nav a:hover {
-  transition: border-color 0.66s, font-size 0.3s ease-out, letter-spacing 0.2s ease-in;
+  transition: border-color 0.66s, font-size 0.3s ease-out;
   color: var(--font-highlight);
-  letter-spacing: 1px;
   font-size: 14px;
 }
 
