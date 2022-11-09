@@ -3,11 +3,14 @@
 
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
   <link rel="icon" type="png" href="logo.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Trackbook | LEED</title>
 </head>
+
+<span id="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -16,7 +19,14 @@
   <a href="BG.html">BuiltGreen</a>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="theme">
+    <label class="switch">
+        <input type="checkbox", onclick="toggleTheme()" autocomplete=on>
+        <span class="slider round"></span>
+    </label>
+</div>
+
+
 
 <div id="topNav" class="topnav">
   <nav>
@@ -27,22 +37,9 @@
     <a href="LEED_Inspect.html">Inspections</a>
     <a href="LEED_Test.html">Testing</a>
     <a href="LEED_Commission.html">Commissioning</a>
+    <div class="animation start-home"></div>
   </nav>
 </div>
-
-<script>
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-var sidebar = document.getElementById("mySidenav")
-
-</script>
 
 </body>
 </html>
