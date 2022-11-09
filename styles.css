@@ -158,8 +158,8 @@ span:hover {
 
 .sidenav {
   text-transform: uppercase;
-  border-right: 1px solid var(--font-color);
-  border-top: 1px solid var(--font-color);
+  border-right: 1px solid var(--color-accent);
+  border-top: 1px solid var(--color-accent);
   float: left;
   height: 100%;
   width: 0;
