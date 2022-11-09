@@ -1,4 +1,3 @@
-
 function openNav() {
   document.getElementById("mySidenav").style.width = "13%";
   document.getElementById("openbtn").style.opacity = "0";
