@@ -294,7 +294,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--font-color);
   text-align: left;
   padding: 8px;
 }
@@ -311,12 +311,12 @@ th {
   }
 
 .description {
-  margin: -8px;
   width: 400px;
   background-color: transparent;
 }
 
 .description:hover {
+  margin-top: -20px;
   padding: 8px;
   color: var(--font-color);
   height: fit-content;
