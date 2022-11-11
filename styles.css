@@ -285,6 +285,7 @@ input:checked + .slider:before {
 }
 
 table {
+  display: inline-block;
   font-size: 12px;
   outline: 0px solid transparent;
   text-align: center;
