@@ -288,10 +288,9 @@ table {
   font-size: 12px;
   outline: 0px solid transparent;
   text-align: center;
-  margin-top: 15px;
   border-collapse: collapse;
   width: 1080px;
-  margin-left: 13.5%;
+  margin: auto;
 }
 
 td, th {
@@ -302,7 +301,7 @@ td {
   border: 1px solid var(--font-color);
   white-space: nowrap;
   max-height: 40px;
-  padding: 5px;
+  padding: 8px;
 }
 
 th {
