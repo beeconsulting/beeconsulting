@@ -276,3 +276,24 @@ input:checked + .slider:before {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+table {
+  outline: 0px solid transparent;
+  font-family: arial, sans-serif;
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #5a7f5a;
+  color: #eff;
+  }
